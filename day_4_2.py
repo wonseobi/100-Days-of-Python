@@ -13,4 +13,14 @@ states_of_america = [
     "Hawaii"
 ]
 
-print(states_of_america[0])
+# Replace an item or element inside the list.
+states_of_america[1] = "Pencilvania"
+print(states_of_america[1])
+
+# Print the whole list variable INCLUDING the altered item or element.
+states_of_america.append("Monterrey")
+print(states_of_america)
+
+#
+states_of_america.extend["Randomland", "New state", "Whateverland"]
+print(states_of_america)
