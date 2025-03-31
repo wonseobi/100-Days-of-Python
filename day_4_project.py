@@ -33,7 +33,7 @@ import random
 
 # Initiating program and asking for user input
 print("Welcome to rock, paper, scissors!")
-user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors "))
+user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors \n"))
 
 # Declaring some empty variables
 computer_choice = random.randint(0, 2)
@@ -74,7 +74,7 @@ elif computer_choice == 2:
 
 
 
-if user_state == 0 and computer_state == 0:
+if user_state == computer_state:
     print("It's a DRAW!")
 elif user_state == 0 and computer_state == 1:
     print("Paper beats rock, you LOSE!")
@@ -82,13 +82,11 @@ elif user_state == 0 and computer_state == 2:
     print("Rock beats scissors, you WIN!")
 elif user_state == 1 and computer_state == 0:
     print("Paper beats rock, you WIN!")
-elif user_state == 1 and computer_state == 1:
-    print("It's a DRAW!")
 elif user_state == 1 and computer_state == 2:
     print("Scissors beats paper, you LOSE!")
 elif user_state == 2 and computer_state == 0:
     print("Rock beats scissors, you LOSE!")
 elif user_state == 2 and computer_state == 1:
     print("Scissors beats paper, you WIN!")
-elif user_state == 2 and computer_state == 2:
-    print("It's a DRAW!")
+else:
+    print("Invalid input, you LOSE!")
